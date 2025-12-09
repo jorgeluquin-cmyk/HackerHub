@@ -1,9 +1,20 @@
 #1 Import the randint() function from the random module
-
+randint(1,10)
 #2 Create two variables: set the number of tokens to 5 and the number of rounds to 0
-
+tokens = 5
+num_of_rounds =0
 #3 Create a while loop that runs so long as the user still has tokens (tokens > 0)
-
+while tokens >0:
+    print ("you have" + tokens + "tokens")
+    tokens = tokens - 1
+    num_1 = randint(1,10)
+    num_2 = randint(1,10)
+    num_3 = randint(1,10)
+    if num_1 == num_2 and num_2 == num_3:
+        tokens = tokens * 2
+    if num_1 == num_2 or num_2 == num_3 or num_1 == num_3:
+        tokens = tokens + 2
+    if else tokens = tokens - 20 
 #4 INSIDE LOOP: Tell the user how many tokens they have
 
 #5 INSIDE LOOP: Decrement the user's tokens and increment the game's rounds
@@ -15,3 +26,4 @@
 #8 INSIDE LOOP: Prompt the user if they want to spend another token to play another round; if so, use the continue statement; if not, use the break statement
 
 #9 Finally, tell the user how many rounds they played
+
